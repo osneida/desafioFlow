@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
-
 import climaRoutes from '../routes/clima';
+import cors from 'cors';
 class Server {
 
     private app: Application;
@@ -19,6 +19,12 @@ class Server {
 
     route(){
         this.app.use( this.apiPaths.clima, climaRoutes );
+    }
+
+    middlewares(){
+
+        // cors
+        this.app.use( cors() );
     }
 
     listen() {
