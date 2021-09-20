@@ -13,6 +13,9 @@ class Server {
         this.app  = express();
         this.port = process.env.PORT || '8000';
 
+        // middewares 
+        this.middlewares();
+
         // definir rutas
         this.route();
     }
