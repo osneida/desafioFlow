@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-console":false //conoco esto para que no de error al usar la console
+    },
+    "rulesDirectory": []
+}
