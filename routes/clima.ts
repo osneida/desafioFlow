@@ -5,7 +5,4 @@ const router = Router();
 
 router.get('/:ciudad', getCiudad);
 
-
-
-
 export default router;

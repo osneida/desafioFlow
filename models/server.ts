@@ -13,7 +13,7 @@ class Server {
         this.app  = express();
         this.port = process.env.PORT || '8000';
 
-        // middewares 
+        // middewares
         this.middlewares();
 
         // definir rutas
